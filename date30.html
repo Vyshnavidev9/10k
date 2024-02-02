@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMS</title>
+</head>
+<body> 
+    <style>
+        html {
+            font-size: 33px
+        }
+
+        body {
+            background-color: skyblue;
+            color: black;
+        }
+      </style>
+    <form>
+        <h1> REGISTRATION FORM </h1>
+        <lable type="f_name"> FIRSTNAME: </lable>
+        <input type="text" id="name" name="fname" placeholder="vyshnavi" required/><br><br>
+        <lable type="L_name"> LASTNAME: </lable>
+        <input type="text" id="lastname" name="lastname" required/><br><br>
+        <lable type="email"> EMAIL: </lable>
+        <input type="text" id="email" name="email" required patter="{10}"/><br><br>
+        <lable type="pswd"> PASSWORD: </lable>
+        <input type="text" id="pswd" name="pswd" required /><br><br>
+        <label type="phno"> PHONENO: </label>
+        <input type="text" id="phno" name="phno" required patters="[0-9]{10}"/><br><br>
+        <lable for="gender"> GENDER: </lable>
+        <input type="radio" id="male" />male
+        <input type="radio" id="female"/> female
+        <input type="radio" id="others"/>others
+        <br><br><input type="submit" value="register">
+
+
+        <h1> LOGIN FORM </h1>
+        <label type="login"> LOGINID </label>
+        <input type="text" id="login" name="login" required/><br><br>
+        <lable type="pswd"> PASSWORD </lable>
+        <input type="text" id="pswd" name="pswd" required/>
+        <br><br><input type="singup" value="singup"/>
+
+    </form>
+</body>
+</html>
